@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpost" content="width=device-width,initial-scale=1.0">
+    <title>What To Do</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&family=Baloo+Da+2:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="main">
+      <div id="title">
+        <h2 id="strike"><em><del>Should.</del> <del>Would.</del> <del>Could.</del></em></h2><h2> Did.</h2>
+      </div>
+      <div id="input-div">
+        <input type="text" id="input" onkeydown = "if (event.keyCode == 13){document.getElementById('addButton').click()}" placeholder="write task here"">
+        <span onclick="newElement()" id="addButton">Add</span>
+      </div>
+      <div id="tasks"></div>
+      <div id="countdown">
+        <form name="customForm" id="custom">
+          <input id="input-min" type="number" min="1" max="600" name="minutes" placeholder="minutes">
+        </form>
+        <div class="display">
+          <p class="display__time-left"></p>
+          <p class="display__end-time"></p>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
