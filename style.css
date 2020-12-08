@@ -6,6 +6,15 @@ body {
   outline: none !important;
 }
 
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
 #main {
   display: flex;
   flex-direction: column;
@@ -148,19 +157,19 @@ input[type=number] {
 
 @media only screen and (max-width:1200px){
   #main{
-    width: 70vw;
+    width: 75vw;
   }
 }
 
 @media only screen and (max-width:900px){
   #main{
-    width: 80vw;
+    width: 85vw;
   }
 }
 
 @media only screen and (max-width:750px){
   #main{
-    width: 90vw;
+    width: 95vw;
   }
 
   #countdown {
@@ -172,8 +181,10 @@ input[type=number] {
 }
 
 @media only screen and (max-width: 550px){
+
+
   #title {
-    font-size: 12px;
+    font-size: 3vw;
     align-items: baseline;
     justify-content: space-between;
   }
@@ -184,12 +195,7 @@ input[type=number] {
   #input {
     width: 70%;
     margin-left: 5px;
-    font-size: 10px;
-  }
-
-  #addButton{
-    width: 30%;
-    margin-right: 5px;
+    font-size: 15px;
   }
 
   #tasks {
@@ -201,13 +207,15 @@ input[type=number] {
     align-items: baseline;
     margin: 8px;
   }
-  .display__end-time{
-    width: 100%;
-    margin-right: 5px;
-    text-align: center;
-  }
+.display__end-time{
+  width: 100%;
+  margin-right: 5px;
+  text-align: center;
+}
 
-  #input-min{
-    width: 30%;
-  }
+#input-min{
+  width: 30%;
+}
+
+
 }
