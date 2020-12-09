@@ -168,8 +168,12 @@ input[type=number] {
 }
 
 @media only screen and (max-width:750px){
+  body{
+    background-color: #fff;
+  }
   #main{
-    width: 95vw;
+    width: 100%;
+    max-height: 100%;
   }
 
   #countdown {
@@ -178,44 +182,4 @@ input[type=number] {
   .display__time-left{
     margin-right: 0;
   }
-}
-
-@media only screen and (max-width: 550px){
-
-
-  #title {
-    font-size: 3vw;
-    align-items: baseline;
-    justify-content: space-between;
-  }
-  #strike {
-    margin: 0 5px;
-  }
-
-  #input {
-    width: 70%;
-    margin-left: 5px;
-    font-size: 15px;
-  }
-
-  #tasks {
-    font-size: 18px;
-  }
-
-  li {
-    justify-content: space-around;
-    align-items: baseline;
-    margin: 8px;
-  }
-.display__end-time{
-  width: 100%;
-  margin-right: 5px;
-  text-align: center;
-}
-
-#input-min{
-  width: 30%;
-}
-
-
 }
