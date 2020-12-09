@@ -197,3 +197,8 @@ input[type=number] {
     margin-right: 0;
   }
 }
+@media only screen and (max-width:450px){
+  #title {
+    font-size: 2vh;
+  }
+}
