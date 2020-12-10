@@ -184,8 +184,8 @@ input[type=number] {
   #tasks {
     margin: 5px 0;
     background-color: #9dc6ca;
-    color: #fff;
     font-weight: 400;
+    font-size: 2.5vh;
   }
 
   #countdown {
